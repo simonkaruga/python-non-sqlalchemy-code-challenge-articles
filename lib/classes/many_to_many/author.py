@@ -8,8 +8,7 @@ class Author:
 
     @property
     def name(self):
-        return self._name  # Immutable
-
+        return self._name  
     def articles(self):
         from .article import Article
         return [a for a in Article.all if a.author == self]

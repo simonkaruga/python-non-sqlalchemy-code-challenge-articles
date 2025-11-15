@@ -1,12 +1,11 @@
-# lib/debug.py
-#!/usr/bin/env python3
+
 import ipdb
 from classes.many_to_many import Author, Magazine, Article
 
 if __name__ == '__main__':
     print("Debugging Magazine Domain")
 
-    # Example objects
+   
     author1 = Author("Simon")
     author2 = Author("Alice")
 

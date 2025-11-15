@@ -9,8 +9,7 @@ class Article:
 
         if not isinstance(title, str) or not (5 <= len(title.strip()) <= 50):
             raise Exception("Title must be 5–50 characters.")
-        self._title = title.strip()  # Immutable
-
+        self._title = title.strip() 
         Article.all.append(self)
 
     @property
